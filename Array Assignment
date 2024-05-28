@@ -1,0 +1,75 @@
+// ASSIGNMENT 1
+// Task 1
+type People ={
+    firstName: string,
+    lastNAme: string,
+    id: number,
+};
+const friend1 : People ={
+    firstName: "Sabeen" ,
+    lastNAme: "Zafar",
+    id: 2201,
+};
+const friend2 : People ={
+    firstName: "Aisha" ,
+    lastNAme: "Hassan",
+    id: 2202,
+};
+const friend3 : People ={
+    firstName: "Tehreem" ,
+    lastNAme: "Mairaj",
+    id: 2203,
+};
+console.log(friend1,friend2, friend3);
+// Task 2
+const scrumbledArray = [ "student","of", true,123,"am","a","GIAIC","I"];
+scrumbledArray.splice(2, 2);
+scrumbledArray.unshift("I", "am", "a");
+scrumbledArray.pop();
+scrumbledArray.splice(5, 2);
+console.log(scrumbledArray);
+// Task 3
+let inventory = [];
+let productOne = { name: "Laptop", model: "Dell", cost: 45000, quantity: 4 };
+let productTwo = { name: "Mobile", model: "samsung", cost: 34000, quantity: 7 };
+let productThree = { name: "Cars",model: "toyota07",cost: 890000,quantity: 2};
+inventory.unshift(productOne, productTwo, productThree);
+console.log(inventory);
+console.log(inventory[2].quantity);
+let additionalChanges = inventory[1];
+additionalChanges.Warrenty = "6 months" ;
+console.log(inventory);
+// Task 4
+const student=[
+    {
+    name:" Hamza Alvi",
+    dob:1997,
+    seniorStatus: true, 
+    assignmentCompletion: true 
+},
+{
+    name:" Sabeen Zafar",
+    dob: 1996,
+    seniorStatus: false, 
+    assignmentCompletion: true 
+},
+    {name:" Hiba Adnan",
+    dob: 2003,
+    seniorStatus: false, 
+    assignmentCompletion: false 
+},
+{
+    name:" Seema Seher",
+    dob:1995,
+    seniorStatus: true, 
+    assignmentCompletion: false 
+},
+]
+console.log(student, "student List");
+function filteredStudents(students) {
+    let newArray = students.filter(students => students.assignmentCompletion && students.seniorStatus);
+    console.log(newArray);
+}
+filteredStudents(student, );
+
+
